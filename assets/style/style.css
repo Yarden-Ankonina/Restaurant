@@ -23,7 +23,10 @@ li {
 
 body {
     background: linear-gradient(to top, rgb(255, 196, 118), rgb(247, 247, 247));
+    z-index: 1;
 }
+
+/* ------------Nav Bar-------------- */
 
 .header{
     display: flex;
@@ -56,12 +59,17 @@ body {
     align-items: center;
     flex-direction: row-reverse;
     justify-content: space-evenly;
+    flex-wrap: nowrap;
     width: 40%;
     height: 80%;
 }
 
 .header__navbar__list__right{
-    justify-content: flex-start;
+    justify-content: space-evenly;
+
+}
+.header__navbar__list__right .header__navbar__list__item{
+    border-radius: 12%;
 }
 
 .header__navbar__list__item:hover {
@@ -70,6 +78,7 @@ body {
 
 .header__navbar__logo{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -88,7 +97,6 @@ h1 {
     border-radius: 12%; 
     padding: 0px 0px;
     width: 12rem;
-      
 }
 
 #logo:hover {
@@ -101,8 +109,9 @@ h1 {
     color: rgb(163, 118, 76);
     margin: 0rem 2rem;
     font-size: 2rem;
-    visibility: hidden;
+    display: none;
 }
+
 .bar__icon:hover{
     color: rgb(66, 44, 16);
 }
@@ -110,32 +119,76 @@ h1 {
 
 /* media query */
 
-@media (max-width: 650px) {
-    .header{
-        width: 100%;
-    }
-    .header__navbar__list{
-        width: 100%;
-        visibility:hidden;
-    }
-    .bar__icon{
-        visibility: visible;
-    }
-    
-    
-}   
+ 
 
-@media (max-width: 1000px){
+@media (max-width: 1050px){
     .header__navbar__list{
-     font-size: 1rem;
+     font-size: 1.05rem;
     }
+   
     
   
 }
 
-@media (max-width: 850px){
+@media (max-width: 900px){
+    .header__navbar__list{
+        font-size: 0.9rem;
+       }
+   
+}
+
+@media (max-width: 780px){
     .header__navbar__list{
         font-size: 0.8rem;
        }
+   
 }
+
+@media (max-width: 712px){
+    .header__navbar__list{
+        font-size: 0.65rem;
+       }
+   
+}
+
+@media (max-width: 650px) {
+    .header{
+        width: 100%;
+    }
+    .header__navbar{
+        justify-content: space-between;
+    }
+    .header__navbar__list__item{
+        visibility:hidden;
+    }
+    .bar__icon{
+        display: inline-block;
+    }
+    #logo {
+        width: 10rem;
+    }
+    .header__navbar__list{
+        width: 30%;
+    }
+}  
+
+@media (max-width: 400px){
+    .header__navbar__list{
+        width:20%;
+    }
+}
+
+@media (max-width: 300px){
+    .bar__icon{
+        display: none;
+    }
+    .header__navbar__list{
+        display: none;
+    }
+    .header__navbar{
+        justify-content: center;
+    }
+}
+
+/* -------------Main------------- */
 
