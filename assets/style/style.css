@@ -172,9 +172,12 @@ h1 {
     }
 }  
 
-@media (max-width: 400px){
+@media (max-width: 450px){
     .header__navbar__list{
         width:20%;
+    }
+    .header__navbar__list__right{
+        justify-content: flex-start;
     }
 }
 
