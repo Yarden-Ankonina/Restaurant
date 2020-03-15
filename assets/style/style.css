@@ -252,31 +252,45 @@ h1 {
 
 /* .kitchen__img{
     max-width: 50%;
-}
-*/
-.main__text__container{
+} */
+
+/* .main__text__container{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     margin-top: 5rem;
     width: 80%;
+} */
+.main{
+    display: flex;
+    height:85%;
+    justify-content: center;
 }
-
-.main__text{
-    font-size: 1.2rem;
+.main__text__container{
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 80%;
+}
+.main__text{
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
+    writing-mode: sideways-rl;
+    font-size: 1.2rem;
 } 
 
 .kitchen__img{
-    display: none;
+    /* display: none; */
+    width: 15rem;
 }
 
 /* ------@media */
 
 @media (max-width :1400px){
-    .kitchen__img{
-    }
+   
     
 }
 
@@ -285,4 +299,44 @@ h1 {
         flex-direction: column;
     }
     
+}
+
+/* -------menu------- */
+
+.menu{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 80%;
+    background: linear-gradient(to bottom, rgb(255, 196, 118), rgb(247, 247, 247));
+
+}
+
+
+/* ----reservations--- */
+.reservations{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: linear-gradient(to top, rgb(255, 196, 118), rgb(247, 247, 247));
+    height: 60%;
+}
+
+
+
+/* ------contact------ */
+.contact{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(255, 196, 118), rgb(247, 247, 247));
+    height: 60%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+
 }
