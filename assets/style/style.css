@@ -1,285 +1,70 @@
-/* reset*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מסעדת יהודה ושרלי</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a05612df27.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+</head>
+<body>
+    <div class="header">
+        <div class="header__navbar">
+            <div class="header__navbar__list__right header__navbar__list">
+                <span class="home__button"><i class="fas fa-home"></i></span>
+                <span class="bar__icon"><i class="fas fa-bars"></i></span>
+                <li class="header__navbar__list__item">תפריט</li>
+                <li class="header__navbar__list__item">אודות     המסעדה</li>
+                <li class="header__navbar__list__item">הזמנות</li>
+            </div><!--#header__navbar__list__left-->
+            <div class="header__navbar__logo header__home__button"><img src="/assets/photos/logo-removebg-preview.png" id="logo" alt=""></div>
+            <div class="header__navbar__list__left header__navbar__list">
+                <li class="header__navbar__list__item">צרו קשר</li>
+                <li class="header__navbar__list__item">שטנר 5, ירושלים</li>
+                <li class="header__navbar__list__item">02-524-288</li>
+            </div><!--#header__navbar__list__right-->
+        </div><!--#header__navbar-->
+    </div><!--#header-->
 
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    margin: 0;
-    height: 100%;
-    font-family: Rubik;
-}
-
-h1{
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style-type: none;
-}
-
-/* styling */
-
-body {
-    background: linear-gradient(to top, rgb(255, 196, 118), rgb(247, 247, 247));
-    z-index: 1;
-}
-
-/* ------------Nav Bar-------------- */
-
-.header{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center ;
-    align-items: center;
-    height: 5rem;
-    width: 100%;
-    color: rgb(163, 118, 76);
-    font-weight:700;
-    z-index: 9;
-}
-
-
-.header__navbar {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-    font-size: 1.2rem;
-    width: 100%;
-    height: 70%;
-    vertical-align: middle;
-    box-shadow: 0px 0px 30px rgba(172, 37, 20, 0.623);
-}
-
-.header__navbar__list {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    width: 40%;
-    height: 80%;
-}
-
-.header__navbar__list__right{
-    justify-content: space-evenly;
-
-}
-.header__navbar__list__right .header__navbar__list__item{
-    border-radius: 12%;
-}
-
-.header__navbar__list__item:hover {
-    color:rgb(66, 44, 16);
-    font-size: 1.3rem;
-    cursor: pointer;
-}
-
-.header__navbar__logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-h1 {
-    font-weight: 400;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-}
-
-#logo {
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 0px 10px rgb(1, 13, 24); 
-    /* background: linear-gradient(to right, rgb(233, 210, 221), rgba(100, 41, 2, 0.459));  */
-    background: linear-gradient(to bottom, rgb(233, 210, 221), rgba(248, 202, 171, 0.377)); 
-    border-radius: 12%; 
-    padding: 0px 0px;
-    width: 12rem;
-    z-index: 9999;
-}
-
-#logo:hover {
-    box-shadow: 0px 0px 20px rgb(1, 13, 24);
-    background-color: rgba(104, 0, 0, 0.514);
-    cursor: pointer;
-    margin-top: 4rem;
-    width: 20rem;
-}
-.bar__icon{
-    vertical-align: middle;
-    color: rgb(163, 118, 76);
-    margin: 0rem 2rem;
-    font-size: 1.5rem;
-    display: none;
-}
-
-.home__button{
-    font-size: 1.5rem;
-}
-
-.bar__icon, .home__button:hover{
-    color: rgb(66, 44, 16);
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-
-/* media query */
-
- 
-
-@media (max-width: 1050px){
-    .header__navbar__list{
-     font-size: 1.05rem;
-    }
-    .home__button{
-        font-size: 1.2rem;
-    }
     
+
+    <div class="main">
+        <div class="main__background__container">
+            <div class="main__background">
+                <div class="main__background__left">
+                    <img src="/assets/photos/lukas-blazek-f-TWhXOrLiU-unsplash.jpg" alt="" class="kitchen__img">
+                    <img src="/assets/photos/tiard-schulz-V5Bqsot6UCg-unsplash.jpg" alt="" class="kitchen__img">
+                    <!-- <img src="/assets/photos/maxim-tajer-x3S1aGQNgro-unsplash.jpg" alt="" class="kitchen__img"> -->
+                </div>
+                <!-- <div class="main__background__right">
+                    <img src="/assets/photos/lukas-blazek-f-TWhXOrLiU-unsplash.jpg" alt="" class="kitchen__img">
+                    <img src="/assets/photos/tiard-schulz-V5Bqsot6UCg-unsplash.jpg" alt="" class="kitchen__img">
+                    <img src="/assets/photos/maxim-tajer-x3S1aGQNgro-unsplash.jpg" alt="" class="kitchen__img">
+                </div> -->
+            </div><!--main__background-->
+        </div><!--main__background__container-->
+        <div class="main__text__container">
+            <p class="main__text"> 
+                לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+            </p>
+            <p class="main__text"> 
+                לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+            </p>
+            
+        </div>
+       
+    </div><!--main-->
   
-}
 
-@media (max-width: 900px){
-    .header__navbar__list{
-        font-size: 0.9rem;
-       }
-   
-}
-
-@media (max-width: 780px){
-    .header__navbar__list{
-        font-size: 0.8rem;
-       }
-       .home__button{
-        font-size: 1rem;
-    }
-   
-}
-
-@media (max-width: 712px){
-    .header__navbar__list{
-        font-size: 0.65rem;
-       }
-   
-}
-
-@media (max-width: 650px) {
-    .header{
-        width: 100%;
-    }
-    .header__navbar{
-        justify-content: space-between;
-    }
-    .header__navbar__list__item{
-        visibility:hidden;
-    }
-    .bar__icon{
-        display: inline-block;
-    }
-    #logo {
-        width: 10rem;
-    }
-    .header__navbar__list{
-        width: 30%;
-    }
-    .home__button{
-        display: none;
-    }
-}  
-
-@media (max-width: 450px){
-    .header__navbar__list{
-        width:20%;
-    }
-    .header__navbar__list__right{
-        justify-content: flex-start;
-    }
-}
-
-@media (max-width: 300px){
-    .bar__icon{
-        display: none;
-    }
-    .header__navbar__list{
-        display: none;
-    }
-    .header__navbar{
-        justify-content: center;
-    }
-}
-
-/* -------------Main------------- */
-.main{
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-}
-/* .main__background__container{
-    width: 30%;
-    height: inherit;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    z-index: 1;
-    
-}   
-*/
-.main__background{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
- .main__background__left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- }
-/* 
-.kitchen__img{
-   width: 100px;
-   height: 100px;
-   border-radius: 50%;
-}  */
-
-.kitchen__img{
-    max-width: 50%;
-}
-.main__text__container{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    flex-grow: 2;
-}
-
-.main__text{
-    margin: 0;
-    height: inherit;
-    width:inherit;
-    font-size: 1.2rem;
-    width: 80%;
-}
-
-
-/* ------@media */
-
-@media (max-width :1400px){
-    .kitchen__img{
-    }
-    
-}
-
-@media (max-width:600px){
-    .main{
-        flex-direction: column;
-    }
-    
-}
+    <div class="footer">
+        <div class="footer__site"></div>
+        <div class="footer__contact"></div>
+        <div class="footer__socialmedia"></div>
+    </div><!--footer-->
+    <script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
