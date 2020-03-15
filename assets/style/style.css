@@ -9,6 +9,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    margin: 0;
+    padding: 0;
+}
+
 html, body {
     margin: 0;
     height: 100%;
@@ -268,7 +273,7 @@ h1 {
     margin-top: 5rem;
     width: 80%;
 } */
-.main{
+/* .main{
     display: flex;
     height:85%;
     justify-content: center;
@@ -290,12 +295,12 @@ h1 {
 
 .kitchen__img{
     /* display: none; */
-    width: 15rem;
-}
+    /* width: 15rem;
+} */ 
 
 
 /* ------@media */
-
+/* 
 @media (max-width :1400px){
    
     
@@ -306,16 +311,95 @@ h1 {
         flex-direction: column;
     }
     
-}
+} */
 
 /* -------main------- */
 
 .main{
+    height: 20%;
     display: flex;
     flex-direction: column;
 }
 
+
+/* ----------------------------------------------------------- */
+/* --------info---------- */
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    width: 100%;
+    height: 100%;
+}
+
+.info__container{
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+
+.info__title{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+}
+
+.info__content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery{
+    display: flex;
+    align-items: center;
+
+}
+
+.gallery__container{
+    margin-top: 2rem;
+    box-shadow: 0px 0px 15px rgba(88, 37, 3, 0.247);
+}
+
+.gallery__img{
+    width: 700px;
+    height: 400px;
+    background: url(/assets/photos/43026807_1149673331846496_2082411281398104064_o.jpg);
+    background-size: cover;
+}
+
+
+
+.gallery__arrow{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    height:50px;
+    width: 20px;
+    font-size: 1.5rem;
+    color: rgb(68, 68, 68);
+}
+
+.gallery__arrow:hover{
+    color:black;
+    cursor: pointer;
+}
+/* ----------------------------------------------------------- */
 /*--------- footer------- */
+
+
+
+
+
 .contact__icons__container{
     text-align: center;
     width: 100%;
