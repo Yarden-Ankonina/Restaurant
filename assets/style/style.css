@@ -4,13 +4,18 @@
     box-sizing: border-box;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 html, body {
     margin: 0;
     height: 100%;
     font-family: Rubik;
 }
 
-h1{
+p,h1,h2{
     margin: 0;
     padding: 0;
 }
@@ -22,7 +27,8 @@ li {
 /* styling */
 
 body {
-    background: linear-gradient(to top, rgb(255, 196, 118), rgb(247, 247, 247));
+    background-color: rgb(255, 243, 226);
+    /* background: linear-gradient(to top, rgb(255, 196, 118), rgb(247, 247, 247)); */
     z-index: 1;
 }
 
@@ -36,6 +42,7 @@ body {
     height: 5rem;
     width: 100%;
     color: rgb(163, 118, 76);
+    color:rgb(66, 44, 16);
     font-weight:700;
     z-index: 9;
 }
@@ -73,9 +80,9 @@ body {
 }
 
 .header__navbar__list__item:hover {
-    color:rgb(66, 44, 16);
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     cursor: pointer;
+    color:rgb(156, 0, 0);
 }
 
 .header__navbar__logo{
@@ -107,8 +114,8 @@ h1 {
     box-shadow: 0px 0px 20px rgb(1, 13, 24);
     background-color: rgba(104, 0, 0, 0.514);
     cursor: pointer;
-    margin-top: 4rem;
-    width: 20rem;
+    margin-top: 1rem;
+    width: 13rem;
 }
 .bar__icon{
     vertical-align: middle;
@@ -123,15 +130,14 @@ h1 {
 }
 
 .bar__icon, .home__button:hover{
-    color: rgb(66, 44, 16);
-    font-size: 2rem;
+    color:rgb(156, 0, 0);
+    font-size: 1.6rem;
     cursor: pointer;
 }
 
 
 /* media query */
 
- 
 
 @media (max-width: 1050px){
     .header__navbar__list{
@@ -287,6 +293,7 @@ h1 {
     width: 15rem;
 }
 
+
 /* ------@media */
 
 @media (max-width :1400px){
@@ -301,42 +308,94 @@ h1 {
     
 }
 
-/* -------menu------- */
+/* -------main------- */
 
-.menu{
+.main{
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    height: 80%;
-    background: linear-gradient(to bottom, rgb(255, 196, 118), rgb(247, 247, 247));
+    flex-direction: column;
+}
+
+/*--------- footer------- */
+.contact__icons__container{
+    text-align: center;
+    width: 100%;
+    padding-top:2rem;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px rgb(80, 60, 6);
+}
+
+.contact__icons{
+    width: 100%;
+}
+
+.contact__icons__text{
+    margin: 1rem;
+    font-weight: 500;
+    color: rgb(156, 0, 0);
+}
+
+.contact__icons__item{
+    border-radius: 50%;
+    margin: 3rem 3rem;
+    cursor: pointer;
+    color: rgb(156, 0, 0);
+}
+
+.contact__icons__item:hover{
+    color: rgb(121, 5, 5);
 
 }
 
 
-/* ----reservations--- */
-.reservations{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    background: linear-gradient(to top, rgb(255, 196, 118), rgb(247, 247, 247));
-    height: 60%;
-}
-
-
-
-/* ------contact------ */
-.contact{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    background: linear-gradient(to bottom, rgb(255, 196, 118), rgb(247, 247, 247));
-    height: 60%;
-}
 
 .footer{
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
-    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    background-color: rgb(156, 0, 0);
+  
+}
 
+.footer__container{
+    display: flex;
+    width: 50%;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+
+}
+
+.footer__container__sitemap{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__credit{
+    margin: 0;
+    background-color: rgb(5, 82, 35);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.footer__list__item{
+    padding: 0.2rem;
+}
+.footer__list__item:hover{
+    cursor: pointer;
+    color: rgb(255, 241, 241);
+}
+
+.footer__title{
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.github__link{
+    padding-left: 1rem;
 }
