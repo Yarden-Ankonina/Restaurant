@@ -363,7 +363,7 @@ h1 {
 
 .footer__container{
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-direction: row-reverse;
     justify-content: space-evenly;
 
