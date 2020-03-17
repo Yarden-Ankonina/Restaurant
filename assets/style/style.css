@@ -224,99 +224,160 @@ h1 {
     }
 }
 
-/* -------------Main------------- */
-/* .main{
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-} */
-/* .main__background__container{
-    width: 30%;
-    height: inherit;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    z-index: 1;
-    
-}   
-*/
-/* .main__background{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* --------collapseMode bar icon---------- */
+
+
+.collapseMode{
+    background: linear-gradient(to bottom, rgb(219, 36, 36) , rgb(134, 2, 2));
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(134, 2, 2); */
+
 }
- .main__background__left{
+.collapse__exit__container{
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.collapse__exit{
+    font-size: 1.4rem;
+    color: black;
+    height: 1.4rem;
+}
+
+
+.collapse__menu{
+    display: flex;
+    height: 30%;
     justify-content: center;
     align-items: center;
- } */
-/* 
-.kitchen__img{
-   width: 100px;
-   height: 100px;
-   border-radius: 50%;
-}  */
 
-/* .kitchen__img{
-    max-width: 50%;
-} */
+}
 
-/* .main__text__container{
+.collapse__menu__container{
     display: flex;
     flex-direction: row-reverse;
+    width: 100%;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.collapse__menu__item__container{
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
-    width: 80%;
-} */
-/* .main{
-    display: flex;
-    height:85%;
-    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(255, 233, 233);
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
-.main__text__container{
-    height: 25rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
+
+.collapse__menu__item__container:hover{
+    box-shadow: 0px 0px 15px 5px rgba(0, 128, 85, 0.445);
+    background-color: rgb(247, 247, 247);
 }
-.main__text{
-    width: 30%;
-    text-align: center;
-    vertical-align: middle;
-    writing-mode: sideways-rl;
-    font-size: 1.2rem;
-} 
 
-.kitchen__img{
-    /* display: none; */
-    /* width: 15rem;
-} */ 
-
-
-/* ------@media */
-/* 
-@media (max-width :1400px){
+.collapse__menu__item{
+   display: flex;
+    flex-wrap: nowrap;
    
+}
+.collapse__logo__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+
+}
+.collapse__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+    width: 400px;
+    height: 400px;
+    background: url(/assets/photos/logo-removebg-preview.png);
+    background-size: cover;
 }
 
-@media (max-width:600px){
-    .main{
-        flex-direction: column;
+/* --media */
+@media (max-width:500px){
+    .collapse__menu__item__container{
+        font-size: 0.8rem;
+        width: 80px;
+        height: 80px;
     }
-    
-} */
+    .collapse__logo{
+        width: 300px;
+        height: 300px;
+    }
+    .collapse__menu{
+        height: 50%;
+    }
+}
 
-/* -------main------- */
+@media (max-width:400px){
+    .collapse__menu__item__container{
+        font-size: 0.7rem;
+        width: 65px;
+        height: 65px;
+    }
+    .collapse__logo{
+        width: 200px;
+        height: 200px;
+    }
+}
 
+@media (max-width:300px){
+    .collapse__menu__item__container{
+        font-size: 0.7rem;
+        width: 55px;
+        height: 55px;
+    }
+    .collapse__logo{
+        width: 150px;
+        height: 150px;
+    }
+    .collapse__menu{
+        height: 70%;
+    }
+}
+
+@media (max-width:200px){
+    .collapse__logo{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width:150px){
+    .collapse__logo{
+        width: 90px;
+        height: 90px;
+    }
+}
+@media (max-width:100px){
+    .collapse__menu__item__container{
+        font-size: 0.5rem;
+        width: 35px;
+        height: 35px;
+    }
+    .collapse__logo{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+
+/* --------------------------------------------------------- */
+/* -------------main---------- */
 .main{
-    height: 10%;
     display: flex;  
     flex-direction: column;
 }
@@ -359,8 +420,9 @@ h1 {
 
 
 .gallery{
-    display: flex;
+    display: flex;  
     align-items: center;
+    margin-bottom: 5rem;
 
 }
 
