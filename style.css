@@ -5,6 +5,7 @@ html, body{
 }
 
 .container{
+    padding: 1rem 1rem;
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -20,4 +21,17 @@ h2{
 p{
     font-size: 2rem;
     font-weight: 700;
+}
+
+@media (max-width:600px)
+{
+    h1{
+        font-size: 1.2rem;
+    }
+    .container{
+        font-size: 0.7rem;
+    }
+    p{
+        font-size: 1rem;
+    }
 }
