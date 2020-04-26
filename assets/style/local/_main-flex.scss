@@ -1,0 +1,26 @@
+@import "./header";
+@import "./main-section";
+
+*, *::before,*::after{
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 100vh;
+    direction: rtl;
+    overflow: scroll;
+    background-color: black;
+
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-flex{
+    height: 100%;
+    width: 100%;
+}

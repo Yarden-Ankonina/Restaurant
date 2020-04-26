@@ -1,0 +1,11 @@
+
+.header{
+    &-menu{
+        display: none;
+        justify-content: space-around;
+        padding: 0.5em;
+        background-color: rgb(211, 38, 38);
+        color: rgb(255, 226, 167);
+        margin: 0;
+    }
+}
