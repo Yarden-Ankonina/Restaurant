@@ -1,4 +1,24 @@
+
+
 html, body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.opening{
+    overflow: visible;
+    background-color: red;
+    margin-left: 10vw;
+    width: 80vw;
+    height: 200vh;
+    background: url(/assets/photos/menu/קורונה.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* html, body{
     margin :0;
     height: 100%;
     font-size: 1.4rem;
@@ -48,4 +68,4 @@ p{
     p{
         font-size: 0.9rem;
     }
-}
+} */
